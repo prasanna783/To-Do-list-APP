@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🗂️ To-Do App</h1>
+    <p>Organize, Track, and Analyze Your Tasks</p>
+  </header>
+
+  <section class="task-input">
+    <h2>Add New Task</h2>
+    <input type="text" id="taskName" placeholder="Task name" />
+    <input type="number" id="estimatedTime" placeholder="Estimated time (hrs)" />
+    <input type="date" id="dueDate" />
+   
+    <button onclick="addTask()">Add Task</button>
+  </section>
+
+  <section class="task-list">
+    <h2>Task List</h2>
+    <ul id="tasks"></ul>
+  </section>
+
+  <section class="analytics">
+    <h2>Analysis</h2>
+    <p>Total Tasks: <span id="totalTasks">0</span></p>
+    <p>Completed Tasks: <span id="completedTasks">0</span></p>
+    <p>Pending Tasks: <span id="pendingTasks">0</span></p>
+    <p>Total Time Spent: <span id="totalTime">0</span> hrs</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
